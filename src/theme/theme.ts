@@ -4,6 +4,7 @@ export const theme = {
   },
 
   spacing: {
+    none: 0,
     small: 4,
     medium: 12,
     large: 24
