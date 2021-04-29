@@ -1,13 +1,13 @@
-import React from "react";
-import Highcharts from "highcharts";
-import HighchartsReact from "highcharts-react-official";
+import React from 'react';
+import Highcharts from 'highcharts';
+import HighchartsReact from 'highcharts-react-official';
 
 export type Props = {
   title: string;
   subtitle: string;
   yAxisTitle: string;
   pointStart: number;
-  series: Highcharts.Options["series"];
+  series: Highcharts.Options['series'];
 };
 
 const propsToOptions = ({
@@ -18,7 +18,7 @@ const propsToOptions = ({
   series,
 }: Props): Highcharts.Options => ({
   chart: {
-    type: "line",
+    type: 'line',
   },
 
   title: {
@@ -37,16 +37,16 @@ const propsToOptions = ({
 
   xAxis: {
     accessibility: {
-      rangeDescription: "Range: 2010 to 2017",
+      rangeDescription: 'Range: 2010 to 2017',
     },
   },
 
   series,
 
   legend: {
-    layout: "vertical",
-    align: "right",
-    verticalAlign: "middle",
+    layout: 'vertical',
+    align: 'right',
+    verticalAlign: 'middle',
   },
 
   plotOptions: {
@@ -66,9 +66,9 @@ const propsToOptions = ({
         },
         chartOptions: {
           legend: {
-            layout: "horizontal",
-            align: "center",
-            verticalAlign: "bottom",
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom',
           },
         },
       },

@@ -1,6 +1,6 @@
 export const theme = {
   colors: {
-    primary: "blue",
+    primary: 'blue',
   },
 
   spacing: {

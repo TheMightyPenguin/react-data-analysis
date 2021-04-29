@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { Theme } from "../../theme/theme";
+import styled from 'styled-components';
+import { Theme } from '../../theme/theme';
 
 export type Props = {
-  spacing: keyof Theme["spacing"];
+  spacing: keyof Theme['spacing'];
 };
 
 const Stack = styled.div<Props>`
