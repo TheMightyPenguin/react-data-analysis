@@ -23,6 +23,7 @@ const Text: React.FC<Props> = (props) => {
       ? theme.colors[props.color as Color]
       : props.color;
 
+  // @ts-ignore
   return <StyledText {...props} color={textColor} />;
 };
 
