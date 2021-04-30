@@ -9,7 +9,8 @@ const Stack = styled.div<Props>`
   display: flex;
   flex-direction: column;
   & > * {
-    margin-bottom: ${({ theme, spacing }) => theme.spacing[spacing]}px;
+    margin-bottom: ${({ theme, spacing }) =>
+      theme.spacing[spacing]}px !important;
   }
 `;
 

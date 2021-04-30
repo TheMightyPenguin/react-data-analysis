@@ -10,18 +10,18 @@ export type DataPoint = {
 };
 
 export type Props = {
-  pointStart: number;
   data: DataPoint[];
   lineColor: Color | string;
+  type: 'line' | 'spline';
 };
 
 const propsToOptions = ({
-  pointStart,
   data,
   lineColor,
+  type,
 }: Props): Highcharts.Options => ({
   chart: {
-    type: 'line',
+    type: type,
   },
 
   title: {
@@ -56,17 +56,14 @@ const propsToOptions = ({
     {
       data,
       color: lineColor,
+      marker: {
+        enabled: false,
+      },
     },
   ],
 
   credits: {
     enabled: false,
-  },
-
-  plotOptions: {
-    series: {
-      pointStart,
-    },
   },
 });
 

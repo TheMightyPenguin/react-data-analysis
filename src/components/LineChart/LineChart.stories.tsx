@@ -5,11 +5,11 @@ import LineChart, { Props as LineChartProps } from './LineChart';
 import data from './data';
 
 const props = {
-  pointStart: 2010,
   data: data.map((item) => ({
     y: item.cases,
     x: new Date(item.date),
   })),
+  type: 'line',
 };
 
 export default {
@@ -23,4 +23,10 @@ const Template: Story<LineChartProps> = (args) => <LineChart {...args} />;
 export const Positive = Template.bind({});
 Positive.args = {
   lineColor: 'positive',
+};
+
+export const Spline = Template.bind({});
+Spline.args = {
+  type: 'spline',
+  lineColor: 'active',
 };
