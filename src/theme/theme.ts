@@ -48,3 +48,5 @@ export const theme = {
 export type Theme = typeof theme;
 
 export type Color = keyof Theme['colors'];
+
+export type TypographyVariant = keyof Theme['typography'];

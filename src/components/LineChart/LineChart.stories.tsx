@@ -20,4 +20,7 @@ export default {
 
 const Template: Story<LineChartProps> = (args) => <LineChart {...args} />;
 
-export const Default = Template.bind({});
+export const Positive = Template.bind({});
+Positive.args = {
+  lineColor: 'positive',
+};
