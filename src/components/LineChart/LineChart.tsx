@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import React from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
@@ -54,8 +55,10 @@ const propsToOptions = ({
 
   series: [
     {
+      // @ts-ignore
       data,
       color: lineColor,
+      // @ts-ignore
       marker: {
         enabled: false,
       },
